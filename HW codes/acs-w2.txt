@@ -1,0 +1,156 @@
+----------User and Group----------
+ls /home/user
+	home directory of a user
+
+vim /etc/passwd
+	view users
+vim /etc/group
+	view groups
+
+sudo groupadd test-group
+	create a new group
+sudp groupdel test-group
+	remove a group
+
+sudo adduser test-user
+	create a user
+sudo deluser test-user
+	delete a user
+
+sudo usermod -aG test-group test-user
+	append user to group
+sudo del user test-user test-group
+----------User and Group----------
+
+----------TASK 1----------
+1. Create a new user
+2. Verify the user
+3. List files in user's home directory
+4. Create a new group
+5. Verify the group
+6. Add the user to the group and verify
+7. Delete the user from the group and veify
+8. Delete the group
+---------TASK 1----------
+
+----------Permissions----------
+ls -l [file] & ls -ld [directory]
+	check permissions
+	- : file | d : directory
+chmod [permission] [file]
+	change permissions
+read = 4 | write = 2 | execute = 1
+	exmaple: chmod 751 = owner : rwx | group : r-x | other : --x
+----------Permissions----------
+MEME TIME
+
+----------TASK 2----------
+1. Create a directory and a .txt file
+2. Check their permissions
+3. Give owner execute permission to the file
+4. Take read permission from others
+5. Give owner full access, group read and other read and write access to
+the file (with numbers)
+----------TASK 2----------
+
+----------Package management----------
+sudo apt update & sudo apt upgrade
+	update package lists and install latest versions
+sudo apt install [package]
+	install!
+sudo apt remove [package]
+	remove!
+
+sudo dpkg -i <File>.deb
+	install deb files
+sudo apt-get install -f
+	fix dependencies
+----------Package management----------
+MEME TIME
+
+----------TASK 3----------
+1. Update your packages (don't install latest versions!)
+2. Install cmatrix
+3. Now remove it. :)
+----------TASK 3----------
+
+-----------Administration----------
+sudo
+	super user do
+sudo nano/gedit/vim file
+	edit system files
+sudo shutdown -h now
+	shutdown now!
+sudo reboot
+	reboot
+
+su - root
+	switch to root
+su - [user]
+	switch to user
+-----------Administration----------
+MEME TIME
+
+----------TASK 4----------
+1. Create a new user and switch to it
+----------TASK 4----------
+
+----------Pipes and Filters----------
+ls | grep .txt
+	filter .txt file
+ls | sort
+	sort files alphabetically
+>
+	overwrite
+>>
+	append
+----------Pipes and Filters----------
+
+----------TASK 5----------
+1. Create a new folder and create 4 .txt files and 2 .c file in it.
+2. List files sorted
+3. Filter c files
+4. Repeat stage 3 and save it in a text file
+5. Add "SBU CE" at the end of the stage 4 file (use "echo")
+----------TASK 5----------
+
+----------Process----------
+ps aux
+	display active process
+top
+	dynamic view
+htop
+	enhanced!
+kill -9 [id]
+	kill
+renice 5 -p [id]
+	change priority
+----------Process----------
+
+----------TASK 6----------
+1. List all the process
+2. Start an app and find its process, then KILL it.
+3. Open firefox, find its current nice value and change it to 5
+----------TASK 6----------
+
+----------Other----------
+ip addr
+	shows the IP addresses assigned to all network
+ping example.com
+	Test connectivity to a host
+wget [link]
+	download
+wget -O [name] [link]
+	with name
+curl -o [link]
+	download
+curl -O [name] [link]
+	with name
+----------Other----------
+
+----------TASK 7----------
+1. ping quera!
+2. show ip addresses
+3. Download Fedora! (cancel it with Ctrl + C)
+----------TASK 7----------
+
